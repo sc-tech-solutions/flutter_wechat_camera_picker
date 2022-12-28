@@ -1328,11 +1328,11 @@ class CameraPickerState extends State<CameraPicker>
               constraints: constraints,
             ),
           ),
-          buildForegroundBody(context, constraints),
           if (pickerConfig.foregroundBuilder != null)
             Positioned.fill(
               child: pickerConfig.foregroundBuilder!(context, innerController),
             ),
+          buildForegroundBody(context, constraints),
         ],
       ),
     );
